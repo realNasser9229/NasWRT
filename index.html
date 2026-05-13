@@ -3,84 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NasWRT — Download</title>
+    <title>NasWRT - Freedom Router OS</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
             background-color: #0a0a0a;
             color: #e0e0e0;
             font-family: 'Courier New', Courier, monospace;
+            line-height: 1.5;
             text-align: center;
+            padding: 40px 20px;
         }
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
+            max-width: 820px;
+            margin: 0 auto;
         }
         .logo {
-            width: 180px;
-            margin-bottom: 20px;
+            width: 160px;
+            margin-bottom: 15px;
         }
         h1 {
             color: #ffcc00;
-            margin: 10px 0;
-            font-size: 2.8em;
+            font-size: 2.6rem;
+            margin-bottom: 8px;
         }
         .tagline {
             color: #888;
-            font-size: 1.1em;
-            margin-bottom: 40px;
+            font-size: 1.15rem;
+            margin-bottom: 50px;
         }
         .section {
-            margin: 50px 0;
-            padding: 30px;
-            background-color: #111;
+            background-color: #111111;
             border: 1px solid #333;
             border-radius: 8px;
+            padding: 35px 30px;
+            margin-bottom: 30px;
+            text-align: left;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
         }
         h2 {
             color: #ffcc00;
-            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.6rem;
+        }
+        .desc {
+            color: #bbb;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
         }
         .download-btn {
             display: inline-block;
             background-color: #ffcc00;
             color: #000;
-            padding: 14px 32px;
-            font-size: 1.2em;
+            padding: 16px 40px;
+            font-size: 1.25rem;
             font-weight: bold;
             text-decoration: none;
             border-radius: 6px;
-            margin-top: 20px;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
         }
         .download-btn:hover {
             background-color: #ffe066;
-            transform: scale(1.05);
+            transform: translateY(-3px);
         }
         .coming-soon {
             color: #666;
+            font-size: 1.1rem;
             font-style: italic;
+            padding: 20px 0;
         }
         footer {
             margin-top: 60px;
             color: #555;
-            font-size: 0.9em;
+            font-size: 0.95rem;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Logo + Title -->
         <img src="logo.png" alt="NasWRT Logo" class="logo">
         <h1>NasWRT</h1>
-        <p class="tagline">The Polished Freedom Router</p>
+        <p class="tagline">The Polished x86 Freedom Router</p>
 
         <!-- x86-64 Section -->
         <div class="section">
             <h2>x86-64</h2>
-            <p>Stable version for PCs, VMs, and x86 hardware</p>
+            <p class="desc">
+                Stable release for PCs, virtual machines, and x86 hardware.<br>
+                Built from scratch with Buildroot • Minimal • Based
+            </p>
             <a href="https://www.dropbox.com/scl/fi/0bdbvb69q9laeqq1xi7fr/NasWRT_x86_customized.img?rlkey=gnrnzh70lsh94favy3t9fucs5&st=m8y6i6k8&dl=0" 
                class="download-btn" target="_blank">
                 Download NasWRT v0.5.0
@@ -91,8 +112,13 @@
         <div class="section">
             <h2>ARM / MIPS</h2>
             <p class="coming-soon">Coming soon...</p>
+            <p style="color:#555; font-size:0.95rem;">Support for popular router hardware in development.</p>
         </div>
 
         <footer>
-            <p>NasWRT • Built from scratch with Buildroot • Pure Freedom</p>
-            <p><a href="https://github.com/YOURUSERNAME/NasWRT" style
+            <p>NasWRT • Freedom Router OS</p>
+            <p><a href="https://github.com/YOURUSERNAME/NasWRT" target="_blank">GitHub Repository</a> • Open Source</p>
+        </footer>
+    </div>
+</body>
+</html>
