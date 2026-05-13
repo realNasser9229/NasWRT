@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NasWRT — Download</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .logo {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #ffcc00;
+            margin: 10px 0;
+            font-size: 2.8em;
+        }
+        .tagline {
+            color: #888;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+        .section {
+            margin: 50px 0;
+            padding: 30px;
+            background-color: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #ffcc00;
+            margin-top: 0;
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #000;
+            padding: 14px 32px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #ffe066;
+            transform: scale(1.05);
+        }
+        .coming-soon {
+            color: #666;
+            font-style: italic;
+        }
+        footer {
+            margin-top: 60px;
+            color: #555;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo + Title -->
+        <img src="logo.png" alt="NasWRT Logo" class="logo">
+        <h1>NasWRT</h1>
+        <p class="tagline">The Polished Freedom Router</p>
+
+        <!-- x86-64 Section -->
+        <div class="section">
+            <h2>x86-64</h2>
+            <p>Stable version for PCs, VMs, and x86 hardware</p>
+            <a href="https://www.dropbox.com/scl/fi/0bdbvb69q9laeqq1xi7fr/NasWRT_x86_customized.img?rlkey=gnrnzh70lsh94favy3t9fucs5&st=m8y6i6k8&dl=0" 
+               class="download-btn" target="_blank">
+                Download NasWRT v0.5.0
+            </a>
+        </div>
+
+        <!-- ARM/MIPS Section -->
+        <div class="section">
+            <h2>ARM / MIPS</h2>
+            <p class="coming-soon">Coming soon...</p>
+        </div>
+
+        <footer>
+            <p>NasWRT • Built from scratch with Buildroot • Pure Freedom</p>
+            <p><a href="https://github.com/YOURUSERNAME/NasWRT" style
